@@ -1,5 +1,4 @@
 
-
 .bg_nav{
   background-color:  #102742;
 }
@@ -7,3 +6,27 @@
 .saca_bs-gutter-x{
   --bs-gutter-x- : 0;
 }
+
+.fondo{
+  background-color: blue;
+  padding-bottom: 10rem;
+  
+  
+}
+
+.contenedor{
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.img{
+  height: 10rem;
+  width: auto;
+}
+.img2{
+  height: auto;
+  width: auto;
+}
+
