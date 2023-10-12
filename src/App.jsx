@@ -6,7 +6,7 @@ import {BrowserRouter,Route,Routes} from "react-router-dom"
 import ListaProductos from "./components/listaProductos"
 import Juego from "./components/Juego";
 import Categoria from "./components/Categoria";
-
+import Compra from "./components/Compra";
 function App() {
   return (
   <div className="container-fluid fondo vh-100"> 
@@ -20,7 +20,7 @@ function App() {
 
         <Route path="/Juego/:Juegonombre" element={<Juego/>}></Route>
         <Route path="*" element={<h1>ERROR 404</h1>}></Route>
-        
+        <Route path="/Compra" element={<Compra/>}></Route>
         </Layout>
         
         </BrowserRouter>
