@@ -1,6 +1,7 @@
 import Gamesx from "../components/Gamesx";
 import Nav_items from "../components/Nav_items";
-import Carrito from "../components/Carrito";
+import Carrito_nav from "./Carrito_nav";
+
 
 
 const Nave = ()=>{
@@ -41,7 +42,7 @@ const Nave = ()=>{
             </div>
           </div>
           <span className="col-1">
-            <Carrito />
+            <Carrito_nav />
           </span>
           
         </div>

@@ -8,8 +8,8 @@
 }
 
 .fondo{
-  background-color: blue;
-  padding-bottom: 10rem;
+  background-color: gray;
+  
   
   
 }
@@ -30,3 +30,21 @@
   width: auto;
 }
 
+
+.navactive{
+  background-color: gray;
+  
+}
+
+.li{
+  list-style-type: none;
+}
+
+.boton_card{
+  background-color: white;
+  
+}
+.boton_card:hover{
+  background-color: #102742;
+  color: white;
+}

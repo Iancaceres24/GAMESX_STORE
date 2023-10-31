@@ -1,19 +1,15 @@
-import { useEffect, useState } from "react";
+import { useEffect,useState } from "react";
 import Card from "../components/card";
-import GetProductos from "../components/Productos";
-
-
+import {getFirestore, collection, getDocs, doc } from "firebase/firestore";
+import Productos_firestore from "../components/Firebase";
+import useProductos from "../hooks/recibir_productos";
 const ListaProductos = () =>{
-  const [produ, setprodu] = useState([]);
 
-useEffect(()=>{
 
-  GetProductos().then((Productos)=>{
-    setprodu(Productos)
-  })
-},[])
+  const items = useProductos()
+  
 
-if (produ.length === 0){
+if ( items.length === 0){
   return <h1>Cargando...</h1>
 }
 
@@ -21,10 +17,11 @@ if (produ.length === 0){
 
 return (
     <div className="container-fluid">
-      <h1>Juegos</h1>
+      <h1>Todos los juegos</h1>
       <ul className="row justify-content-around">
-        {produ.map((Producto) => (
-          <li className="col-3 mb-3" key={Producto.id}>
+        
+        {items.map((Producto) => (
+          <li className="col-3 m-4 li" key={Producto.id}>
             <Card
               nombre={Producto.nombre}
               descripcion={Producto.descripcion}

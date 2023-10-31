@@ -1,13 +1,16 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 
 
 const Nav_items = ({text,categoria })=>{
     return(  
-    <Link className="nav-link  text-center text-light" aria-current="page" to={categoria}>
+    <NavLink className={({isActive}) =>  isActive ? "nav-link  text-center text-light navactive" : "nav-link  text-center text-light" } aria-current="page" to={categoria}>
         {text}
-    </Link>
+    </NavLink>
     )
 }
 
 export default Nav_items;
+
+
+
