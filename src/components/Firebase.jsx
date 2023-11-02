@@ -3,8 +3,7 @@ import {
   collection,
   writeBatch,
   doc,
- getDoc,
- setDoc
+
   
 } from "firebase/firestore";
 import img_over from "../assets/overwatch_2.jpg";

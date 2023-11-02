@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import {  useState } from "react";
 import Card from "./card";
 import useProductos from "../hooks/recibir_productos"
 import { useParams } from "react-router-dom";
